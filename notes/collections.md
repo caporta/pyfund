@@ -40,6 +40,13 @@ Collections - Summary
 - **Sets**
   - Unordered collections of unique elements
   - Support powerful and expressive set algebra operations and predicates
+      - `union()` or `|` (commutative)
+      - `intersection()` or `&` (commutative)
+      - `difference()` or `-` (non-commutative)
+      - `symmetric_difference()` or `^` (commutative)
+      - `issubset()`
+      - `issuperset()`
+      - `isdisjoint()`
 
 - **Collection Protocols**
   - A set of operations or methods that a type must support if it is to implement that protocol
