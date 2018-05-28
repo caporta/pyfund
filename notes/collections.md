@@ -41,9 +41,34 @@ Collections - Summary
   - Unordered collections of unique elements
   - Support powerful and expressive set algebra operations and predicates
 
-- **Protocols**
-  - Interfaces that characterize various collections
-  - e.g. `iterable`, `sequence`, `container`
+- **Collection Protocols**
+  - A set of operations or methods that a type must support if it is to implement that protocol
+  - _Container_
+    - `str`, `list`, `range`, `tuple`, `bytes`, `set`, `dict`
+    - Membership testing using `in` and `not in`
+  - _Sized_
+    - `str`, `list`, `range`, `tuple`, `bytes`, `set`, `dict`
+    - Determine number of elements with `len(s)`
+  - _Iterable_
+    - `str`, `list`, `range`, `tuple`, `bytes`, `set`, `dict`
+    - Can produce an _iterator_ with `iter(s)`
+    - `for item in iterable: ...`
+  - _Sequence_
+    - `str`, `list`, `range`, `tuple`, `bytes`
+    - Retrieve elements by index
+      - `item = seq[index]`
+    - Find items by value
+      - `index = seq.index(item)`
+    - Count items
+      - `n = seq.count(item)`
+    - Produce a reversed sequence
+      - `r = reversed(seq)`
+  - _Mutable Sequence_
+    - `list`
+  - _Mutable Set_
+    - `set`
+  - _Mutable Mapping_
+    - `dict`
 
 - **Notes**
   - Underscores (`_`) are conventionally used for dummy or superflous variables
